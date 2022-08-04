@@ -1,5 +1,8 @@
 # shopping-cart
 Project description
+Create Receipt for Customer
+import datetime required
+
 https://github.com/prof-rossetti/intro-to-python/blob/main/projects/shopping-cart/README.md
 
 # Installation
