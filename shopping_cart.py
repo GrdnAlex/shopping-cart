@@ -56,6 +56,19 @@ while True:
         selected_ids.append(selected_id)
 
 
+print("----------------------------")
+print("Campus Convenience Shop")
+print("----------------------------")
+# importing required modules
+import datetime
+
+curr_datetime = datetime.datetime.now()
+
+print("CHECKOUT AT:" + str(curr_datetime))
+print("----------------------------")
+
+print("Selected Products:")
+
 # Info Display / Output
 #print(selected_ids)
 for selected_id in selected_ids:
@@ -63,9 +76,18 @@ for selected_id in selected_ids:
         matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
         matching_product = matching_products[0]
         total_price = total_price + matching_product["price"]
-        print('Selected Product:' + matching_product["name"]+ " " + str(matching_product["price"]))
+        print("..." + matching_product["name"]+ " " + to_usd(matching_product["price"]))
 
-print("Total Price: " + str(total_price))
+print("----------------------------")
+
+
+print("SUBTOTAL: " + to_usd(total_price))
+print("TAX: " + to_usd(total_price*0.0875))
+print("TOTAL: " + to_usd(total_price*1.0875))
+
+print("----------------------------")
+print("Thank You for Your Patronage")
+print("----------------------------")
 
 
 
