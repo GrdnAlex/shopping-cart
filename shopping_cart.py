@@ -41,6 +41,7 @@ def to_usd(my_price):
 
 
 # Info Capture / Input
+total_price = 0
 
 while True:
     pass
@@ -50,11 +51,15 @@ while True:
     else:
         matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
         matching_product = matching_products[0]
-        print('selected Product:' + matching_product["name"]+ " " + str(matching_product["price"]))
+        total_price = total_price + matching_product["price"]
+        print('Selected Product:' + matching_product["name"]+ " " + str(matching_product["price"]))
 
 
 
 # Info Display / Output
+
+
+print("Total Price: " + str(total_price))
 
 
 
