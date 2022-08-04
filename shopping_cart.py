@@ -39,7 +39,17 @@ def to_usd(my_price):
 
 # TODO: write some Python code here to produce the desired output
 
-print(products)
+
+# Info Capture / Input
+
+selected_id = input("Please input a product identifier: ")
+print(selected_id)
+print(type(selected_id))
+
+# Info Display / Output
+
+
+
 
 # A grocery store name of your choice
 # A grocery store phone number and/or website URL and/or address of choice
